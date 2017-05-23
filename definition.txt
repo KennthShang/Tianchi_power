@@ -1,0 +1,12 @@
+climate:
+1：other
+2：小雨、小雪、阵雨
+3：大雨、大雪、雷阵雨
+
+windspeed:
+1: 3级以下
+2：3~4
+3: 4级以上
+
+temp：
+avg of high and low

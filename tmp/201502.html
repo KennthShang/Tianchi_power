@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<title>扬中2月份天气|扬中2月份气温|扬中2015年2月份历史天气—全球天气网</title>
+<meta name="Keywords" content="扬中2月份天气,扬中2月份气温" />
+<meta name="description" content="全球天气网（www.tianqi.com）提供扬中2月份天气数据，扬中2015年2月份历史天气记录，扬中2月份气温走势、风向等数据。了解扬中过去2月份天气，让您2月出行更方便。" />
+<script src="http://www.tianqi.com/static/js/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://m.lishi.tianqi.com/yangzhong/201502.html");</script>
+<script language="javascript" src="http://www.tianqi.com/static/js/new_rili.js"></script>
+<link href="http://www.tianqi.com/static/css/custom.css" rel="stylesheet" type="text/css">
+<link href="http://www.tianqi.com/data/html/weather.css?20110505" rel="stylesheet" type="text/css">
+<link href="http://www.tianqi.com/static/css/global.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.tianqi.com/static/js/jquery.min.new.js"></script>
+<script src="http://www.tianqi.com/static/highcharts/highcharts.js"></script>
+<script src="http://www.tianqi.com/static/highcharts/modules/exporting.js"></script>
+<script type="text/javascript" src="http://www.tianqi.com/static/js/jQselect.js"></script>
+<script language="javascript" src="http://www.tianqi.com/static/tqgg/gg.js"></script>
+</head>
+<body>
+
+
+<style type="text/css">
+	.h_212{height:0px; width:960px; margin:0 auto;}
+	.h_212 a{width:960px; display:block; height:0px;}
+	.header{margin:0px auto;}
+	</style>
+<div class="header">
+	<div class="logo" id="tq_logo"><a href="http://www.tianqi.com"><img src="http://www.tianqi.com/static/img/logo_210.gif" alt="天气网"></a></div>
+<div class="topnav">
+	<ul>
+		<li class="t0" id="mo_shenghuo_header" style="width:170px;"> </li>
+		<li class="t1" style="width: 276px;"><span class="tq_wx_txt" id="tq_wx_txt"><a href="http://www.tianqi.com/weixinshuoming.html" rel="nofollow" target="_blank">微信订阅天气</a>
+			<div class="wx_box01" style="display:none;">
+			   <div class="r_h01"></div>
+			   <div class="wxpic"><a href="http://www.tianqi.com/weixinshuoming.html" rel="nofollow" target="_blank"><img src="http://www.tianqi.com/images/tq_wxpic.jpg" alt="微信扫描查天气"></a></div>
+			   <h4><a href="http://www.tianqi.com/weixinshuoming.html" rel="nofollow" target="_blank">微信扫描查天气</a></h4>
+			</div></span><span style="float:left; position:relative;"> | <a href="http://lishi.tianqi.com/yangzhong/index.html" target="_blank">历史天气</a> | <a href="http://app.tianqi.com" target="_blank">天气app下载</a><i class="newapp_ico"></i></span></li>
+		<li class="search">
+			<form id="index_serch" method="get" action="http://www.tianqi.com/index.php" name="index_serch">
+	    	<input type="hidden" name="c" value="tianqi"><input type="hidden" name="a" value="search">
+	    	<input id="serch_text" class="search_area" type="text" value="输入城市" onfocus="this.value='';" onblur="if(this.value==''){this.value='输入城市';}"  name="city">
+	    	<input class="search_button" value="" type="submit">
+	    	</form>
+    	</li>
+		<li class="t3"><a href="http://www.tianqi.com/index.php?mycity=1" onclick="set(3);">当前城市</a> | <a href="http://m.tianqi.com/" target="_blank">手机天气网</a><!--<a onclick="addFav('http://www.tianqi.com/?sc', '全球天气网 tianqi.com');" style="cursor:pointer">收藏</a>--></li>
+	</ul>
+</div>
+<div class="nav_b">
+		<div class="searchBar searchBar_new">
+		<div class="yellow">城市选择：</div>
+					<div class="select">
+			<select onchange="getcity(this.value)" id="province" style="display:none;">
+		    		    	<option  value="22" py="anhui">A 安徽</option>
+		    		    	<option  value="33" py="aomen">A 澳门</option>
+		    		    	<option  value="01" py="beijing">B 北京</option>
+		    		    	<option  value="04" py="chongqing">C 重庆</option>
+		    		    	<option  value="23" py="fujian">F 福建</option>
+		    		    	<option  value="16" py="gansu">G 甘肃</option>
+		    		    	<option  value="26" py="guizhou">G 贵州</option>
+		    		    	<option  value="28" py="guangdong">G 广东</option>
+		    		    	<option  value="30" py="guangxi">G 广西</option>
+		    		    	<option  value="05" py="heilongjiang">H 黑龙江</option>
+		    		    	<option  value="09" py="hebei">H 河北</option>
+		    		    	<option  value="18" py="henan">H 河南</option>
+		    		    	<option  value="20" py="hubei">H 湖北</option>
+		    		    	<option  value="25" py="hunan">H 湖南</option>
+		    		    	<option  value="31" py="hainan">H 海南</option>
+		    		    	<option  value="06" py="jilin">J 吉林</option>
+		    		    	<option selected="" value="19" py="jiangsu">J 江苏</option>
+		    		    	<option  value="24" py="jiangxi">J 江西</option>
+		    		    	<option  value="07" py="liaoning">L 辽宁</option>
+		    		    	<option  value="08" py="neimenggu">N 内蒙古</option>
+		    		    	<option  value="17" py="ningxia">N 宁夏</option>
+		    		    	<option  value="15" py="qinghai">Q 青海</option>
+		    		    	<option  value="02" py="shanghai">S 上海</option>
+		    		    	<option  value="10" py="shanxi">S 山西</option>
+		    		    	<option  value="11" py="shanxi1">S 陕西</option>
+		    		    	<option  value="12" py="shandong">S 山东</option>
+		    		    	<option  value="27" py="sichuan">S 四川</option>
+		    		    	<option  value="03" py="tianjin">T 天津</option>
+		    		    	<option  value="34" py="taiwan">T 台湾</option>
+		    		    	<option  value="13" py="xinjiang">X 新疆</option>
+		    		    	<option  value="14" py="xicang">X 西藏</option>
+		    		    	<option  value="32" py="hongkong">X 香港</option>
+		    		    	<option  value="29" py="yunnan">Y 云南</option>
+		    		    	<option  value="21" py="zhejiang">Z 浙江</option>
+		    			</select>
+		</div>
+		<div class="select selectr">
+			<select onchange="getzone(this)" style="display:none;" id="city">
+					    	<option  value="1911" py="changzhou" ishot="1">C 常州</option>
+		    		    	<option  value="1909" py="huaian1" ishot="1">H 淮安</option>
+		    		    	<option  value="1910" py="lianyungang" ishot="1">L 连云港</option>
+		    		    	<option  value="1901" py="nanjing" ishot="1">N 南京</option>
+		    		    	<option  value="1905" py="nantong" ishot="1">N 南通</option>
+		    		    	<option  value="1904" py="suzhou" ishot="1">S 苏州</option>
+		    		    	<option  value="1913" py="suqian" ishot="1">S 宿迁</option>
+		    		    	<option  value="1912" py="taizhou2" ishot="1">T 泰州</option>
+		    		    	<option  value="1902" py="wuxi1" ishot="1">W 无锡</option>
+		    		    	<option  value="1908" py="xuzhou" ishot="1">X 徐州</option>
+		    		    	<option  value="1906" py="yangzhou" ishot="1">Y 扬州</option>
+		    		    	<option  value="1907" py="yancheng" ishot="1">Y 盐城</option>
+		    		    	<option selected="" value="1903" py="zhenjiang" ishot="1">Z 镇江</option>
+		    			</select>
+		</div>
+		<div class="select selectr">
+			<select onchange="set('go')" style="display:none;" id="zone">
+					    	<option  value="101190302" py="danyang" ishot="0">D 丹阳</option>
+		    		    	<option  value="101190305" py="dantu" ishot="0">D 丹徒</option>
+		    		    	<option  value="101190304" py="jurong" ishot="0">J 句容</option>
+		    		    	<option  value="101190306" py="jingkou" ishot="0">J 京口区</option>
+		    		    	<option  value="101190307" py="runzhouqu" ishot="0">R 润州区</option>
+		    		    	<option selected="" value="101190303" py="yangzhong" ishot="0">Y 扬中</option>
+		    		    	<option  value="101190301" py="zhenjiang" ishot="1">Z 镇江</option>
+		    			</select>
+		</div>
+			
+		<div class="set01 set01_new">
+			<a href="javascript:;" onclick="set('4');"><img width="80" height="27" title="设为默认" src="http://www.tianqi.com/static/img/serch_btn_new.gif"></a></div>
+		</div>
+		<div class="r1_new">
+		<a target="_blank" rel="nofollow" href="http://wannianli.tianqi.com">
+			<ul class="time_new">
+
+			<li class="time_1"><script type="text/javascript" src="http://www.tianqi.com/static/js/city2.js"></script></li>
+			<li class="time_2"><script language="javascript">document.write((new Date().getMonth()+1)+"月"+new Date().getDate()+"日");</script></li>
+			</ul>
+			</a>
+			<div class="today_nws">
+			<h4>历史上的今天</h4>
+				<div id="demo_left">
+					<div id="indemo_left" style="height: 19px;overflow: hidden;">
+						<div id="demo1_left">
+	<a target="_blank" href="http://www.tianqi.com/index.php?c=history&md=0521&s=1971">北宋政治家、思想家王安石逝世</a>
+	<a target="_blank" href="http://www.tianqi.com/index.php?c=history&md=0521&s=1972">荷兰病理学家威廉埃因托芬诞生</a>
+	<a target="_blank" href="http://www.tianqi.com/index.php?c=history&md=0521&s=1973">江西瑞昌士民拆毁美国教堂</a>
+	<a target="_blank" href="http://www.tianqi.com/index.php?c=history&md=0521&s=1974">美国自由女神像安装峻工</a>
+</div>
+						<div id="demo2_left"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script>idemo();</script>
+		
+</div>
+<div class="crl"></div>	<div class="tq_menu_new">
+	<ul>
+		<li ><a href="http://www.tianqi.com/"><span>首页</span></a></li>
+		 <li id="tq_nav"><a href="http://www.tianqi.com/chinacity.html"><span>全国天气</span></a><div class="tq_boxnav" style="display:none"><a class="t1" href="http://www.tianqi.com/beijingjingdian/">旅游天气</a><a class="t1" href="http://www.tianqi.com/15tianqi/">15天天气</a><a class="t1" href="http://www.tianqi.com/30tianqi/">30天天气</a></div></li>
+	    <li><a href="http://www.tianqi.com/worldcity.html"><span>国际天气</span></a></li>
+	    <li><a href="http://lishi.tianqi.com/"><span>历史天气</span></a></li>
+	    <li><a href="http://www.tianqi.com/air/" target="_new"><span>pm2.5查询</span></a></li>
+		<li><a class="r1" href="http://www.tianqi.com/index.php?c=other&a=tqbb"><span>视频播报</span></a></li>
+	    <li><a href="http://www.tianqi.com/news/"><span>天气新闻</span></a></li>
+	    <li><a href="http://www.tianqi.com/changshi/"><span>天气常识</span></a></li>
+		<li><a href="http://www.tianqi.com/chuanyi/"><span>穿衣指数</span><i class="hot"></i></a></li>
+	    <!--<li><a target="_blank" href="http://huoche.tianqi.com/"><span>火车票预订</span><i class="hot"></i></a></li>-->
+	    <li><a target="_blank" href="http://www.tianqi.com/baike/"><span>天气百科</span></a></li>
+	</ul>
+</div>
+	<div class="block8"></div><script>head_01();</script><div class="block8"></div>
+	<div style="clear:both"></div>
+	<div class="city_t pageclear">
+		<div class="city_title clearfix">
+			<table width="927" cellspacing="0" cellpadding="0" border="0" class="ad"><tbody>
+			<tr>
+				<td width="627" align="left" class="tdleft">
+					<h9 class="tqnav_22">当前位置：
+						<a title="天气网" href="http://www.tianqi.com">天气网</a> &gt;&gt; 
+						<a title="历史天气查询" href="http://lishi.tianqi.com">历史天气查询</a> &gt;&gt; 
+						<a href="http://lishi.tianqi.com/yangzhong/index.html">扬中历史天气</a> &gt;&gt; 
+					</h9>
+					<h1 class=tqnav_11>扬中2015年2月份天气</h1>
+				</td>
+				<td align="right" width="407"><!--7-->
+<span style="float:right;line-height: 16px; padding-right:20px;">
+        	<script>bdshare();</script>
+            </div>  
+        </span>
+</td>			</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+<div class="crl"></div>
+
+<div id="main" class="clearfix">
+<div class="lishi01" style="clear:both"><script>lishi_index_01();</script></div>
+<div class="left">
+	<div id="tool_site" class="box-base m7">
+		<div class="box-hd"><h3 class="box-t-l">扬中2015年2月份气温走势图</h3>
+		
+			<span class="tqxiangqing">
+								<a href="http://lishi.tianqi.com/yangzhong/201501.html">上一月</a> 
+				
+								<a href="http://lishi.tianqi.com/yangzhong/201503.html">下一月</a>
+								<select name="select" onchange="if (this.value != '') window.location.href='http://lishi.tianqi.com/yangzhong/' + this.value + '.html'">
+					<option value="">历史天气详情</option>
+																   		<option value="201704" >2017年04月</option>
+					   						   		<option value="201703" >2017年03月</option>
+					   						   		<option value="201702" >2017年02月</option>
+					   						   		<option value="201701" >2017年01月</option>
+					   				    												   		<option value="201612" >2016年12月</option>
+					   						   		<option value="201611" >2016年11月</option>
+					   						   		<option value="201610" >2016年10月</option>
+					   						   		<option value="201609" >2016年09月</option>
+					   						   		<option value="201608" >2016年08月</option>
+					   						   		<option value="201607" >2016年07月</option>
+					   						   		<option value="201606" >2016年06月</option>
+					   						   		<option value="201605" >2016年05月</option>
+					   						   		<option value="201604" >2016年04月</option>
+					   						   		<option value="201603" >2016年03月</option>
+					   						   		<option value="201602" >2016年02月</option>
+					   						   		<option value="201601" >2016年01月</option>
+					   				    												   		<option value="201512" >2015年12月</option>
+					   						   		<option value="201511" >2015年11月</option>
+					   						   		<option value="201510" >2015年10月</option>
+					   						   		<option value="201509" >2015年09月</option>
+					   						   		<option value="201508" >2015年08月</option>
+					   						   		<option value="201507" >2015年07月</option>
+					   						   		<option value="201506" >2015年06月</option>
+					   						   		<option value="201505" >2015年05月</option>
+					   						   		<option value="201504" >2015年04月</option>
+					   						   		<option value="201503" >2015年03月</option>
+					   						   		<option value="201502" selected="selected">2015年02月</option>
+					   						   		<option value="201501" >2015年01月</option>
+					   				    												   		<option value="201412" >2014年12月</option>
+					   						   		<option value="201411" >2014年11月</option>
+					   						   		<option value="201410" >2014年10月</option>
+					   						   		<option value="201409" >2014年09月</option>
+					   						   		<option value="201408" >2014年08月</option>
+					   						   		<option value="201407" >2014年07月</option>
+					   						   		<option value="201406" >2014年06月</option>
+					   						   		<option value="201405" >2014年05月</option>
+					   						   		<option value="201404" >2014年04月</option>
+					   						   		<option value="201403" >2014年03月</option>
+					   						   		<option value="201402" >2014年02月</option>
+					   						   		<option value="201401" >2014年01月</option>
+					   				    												   		<option value="201312" >2013年12月</option>
+					   						   		<option value="201311" >2013年11月</option>
+					   						   		<option value="201310" >2013年10月</option>
+					   						   		<option value="201309" >2013年09月</option>
+					   						   		<option value="201308" >2013年08月</option>
+					   						   		<option value="201307" >2013年07月</option>
+					   						   		<option value="201306" >2013年06月</option>
+					   						   		<option value="201305" >2013年05月</option>
+					   						   		<option value="201304" >2013年04月</option>
+					   						   		<option value="201303" >2013年03月</option>
+					   						   		<option value="201302" >2013年02月</option>
+					   						   		<option value="201301" >2013年01月</option>
+					   				    												   		<option value="201212" >2012年12月</option>
+					   						   		<option value="201211" >2012年11月</option>
+					   						   		<option value="201210" >2012年10月</option>
+					   						   		<option value="201209" >2012年09月</option>
+					   						   		<option value="201208" >2012年08月</option>
+					   						   		<option value="201207" >2012年07月</option>
+					   						   		<option value="201206" >2012年06月</option>
+					   						   		<option value="201205" >2012年05月</option>
+					   						   		<option value="201204" >2012年04月</option>
+					   						   		<option value="201203" >2012年03月</option>
+					   						   		<option value="201202" >2012年02月</option>
+					   						   		<option value="201201" >2012年01月</option>
+					   				    												   		<option value="201112" >2011年12月</option>
+					   						   		<option value="201111" >2011年11月</option>
+					   						   		<option value="201110" >2011年10月</option>
+					   						   		<option value="201109" >2011年09月</option>
+					   						   		<option value="201108" >2011年08月</option>
+					   						   		<option value="201107" >2011年07月</option>
+					   						   		<option value="201106" >2011年06月</option>
+					   						   		<option value="201105" >2011年05月</option>
+					   						   		<option value="201104" >2011年04月</option>
+					   						   		<option value="201103" >2011年03月</option>
+					   						   		<option value="201102" >2011年02月</option>
+					   						   		<option value="201101" >2011年01月</option>
+					   				    					</select>
+			</span>
+			
+		</div>
+		<div class="tqtongji">
+		<div id="container2">
+            <div class="demo" id="highcharts2"></div>
+        </div>
+		<script type="text/javascript">
+           $(function () {
+			$('#container2').highcharts({
+				title: {
+					text: 'Monthly Average Temperature',
+					x: -20 //center
+				},
+				subtitle: {
+					text: 'www.tianqi.com',
+					x: -20
+				},
+				xAxis: {
+					categories: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', ]
+				},
+				yAxis: {
+					title: {
+						text: '温度 (°C)'
+					},
+					plotLines: [{
+						value: 0,
+						width: 1,
+						color: '#808080'
+					}]
+				},
+				series: [{
+					name: '最高温度',
+					data: [7, 7, 7, 7, 9, 12, 6, 6, 15, 15, 15, 15, 19, 15, 15, 14, 12, 11, 10, 11, 11, 10, 12, 10, 10, 6, 4, 9, ]
+				}, {
+					name: 'New York',
+					data: []
+				}, {
+					name: 'Berlin',
+					data: []
+				}, {
+					name: '最低温度',
+					data: [1, 2, 2, -2, -2, -1, 0, -4, 0, 0, 0, 0, 3, 10, 9, 3, 3, 1, 4, 8, 3, 4, 4, 6, 6, 3, 2, 1, ]
+				}],
+				tooltip: {//鼠标移到图形上时显示的提示框  
+					formatter: function() {  
+						return this.x +'日'+ this.series.name +': '+ this.y +'°C'; 
+						//this.x +'日: '+ this.y +'°C';  
+					}
+       				},
+				credits: {
+					enabled: false//不显示highCharts版权信息
+				},
+				exporting: {
+					enabled: false //用来设置是否显示‘打印’,'导出'等功能按钮，不设置时默认为显示
+				},
+				legend: {
+					enabled: false
+				},
+				title :{
+					text:null
+				},
+				subtitle:{
+					text:null
+				},
+			});
+		});
+        </script>
+		</div>
+		<div style="clear:both"></div>	  
+	</div>
+	<div class="lishicity02"><script>lishicity_index_02();</script></div>
+	<div id="tool_site" class="box-base m7">
+		<div class="box-hd"><h3 class="box-t-l">扬中2015年2月份天气详情</h3></div>
+		<div class="tqtongji2">
+		   <ul class="t1">
+		   <li>日期</li>
+		   <li>最高气温</li>
+		   <li>最低气温</li>
+		   <li>天气</li>
+		   <li>风向</li>
+		   <li>风力</li>
+		   </ul>
+		   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150201.html">2015-02-01</a></li>
+		   			   	<li>7</li>
+		   	<li>1</li>
+		   	<li>阴</li>
+		   	<li>东风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150202.html">2015-02-02</a></li>
+		   			   	<li>7</li>
+		   	<li>2</li>
+		   	<li>阴转多云</li>
+		   	<li>东风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150203.html">2015-02-03</a></li>
+		   			   	<li>7</li>
+		   	<li>2</li>
+		   	<li>阴转多云</li>
+		   	<li>西北风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150204.html">2015-02-04</a></li>
+		   			   	<li>7</li>
+		   	<li>-2</li>
+		   	<li>多云转晴</li>
+		   	<li>西北风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150205.html">2015-02-05</a></li>
+		   			   	<li>9</li>
+		   	<li>-2</li>
+		   	<li>晴转多云</li>
+		   	<li>西南风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150206.html">2015-02-06</a></li>
+		   			   	<li>12</li>
+		   	<li>-1</li>
+		   	<li>多云</li>
+		   	<li>南风</li>
+		   	<li>小于3级转3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150207.html">2015-02-07</a></li>
+		   			   	<li>6</li>
+		   	<li>0</li>
+		   	<li>多云转晴</li>
+		   	<li>西北风</li>
+		   	<li>4-5级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150208.html">2015-02-08</a></li>
+		   			   	<li>6</li>
+		   	<li>-4</li>
+		   	<li>晴</li>
+		   	<li>东北风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150209.html">2015-02-09</a></li>
+		   			   	<li>15</li>
+		   	<li>0</li>
+		   	<li>晴</li>
+		   	<li>西南风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150210.html">2015-02-10</a></li>
+		   			   	<li>15</li>
+		   	<li>0</li>
+		   	<li>晴</li>
+		   	<li>西南风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150211.html">2015-02-11</a></li>
+		   			   	<li>15</li>
+		   	<li>0</li>
+		   	<li>晴</li>
+		   	<li>西南风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150212.html">2015-02-12</a></li>
+		   			   	<li>15</li>
+		   	<li>0</li>
+		   	<li>晴</li>
+		   	<li>西南风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150213.html">2015-02-13</a></li>
+		   			   	<li>19</li>
+		   	<li>3</li>
+		   	<li>晴转多云</li>
+		   	<li>东南风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150214.html">2015-02-14</a></li>
+		   			   	<li>15</li>
+		   	<li>10</li>
+		   	<li>阵雨</li>
+		   	<li>东南风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150215.html">2015-02-15</a></li>
+		   			   	<li>15</li>
+		   	<li>9</li>
+		   	<li>阴转多云</li>
+		   	<li>西北风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150216.html">2015-02-16</a></li>
+		   			   	<li>14</li>
+		   	<li>3</li>
+		   	<li>多云转晴</li>
+		   	<li>西南风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150217.html">2015-02-17</a></li>
+		   			   	<li>12</li>
+		   	<li>3</li>
+		   	<li>晴</li>
+		   	<li>东风</li>
+		   	<li>4-5级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150218.html">2015-02-18</a></li>
+		   			   	<li>11</li>
+		   	<li>1</li>
+		   	<li>多云</li>
+		   	<li>东北风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150219.html">2015-02-19</a></li>
+		   			   	<li>10</li>
+		   	<li>4</li>
+		   	<li>阴转小到中雨</li>
+		   	<li>东风</li>
+		   	<li>3-4级转小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150220.html">2015-02-20</a></li>
+		   			   	<li>11</li>
+		   	<li>8</li>
+		   	<li>小雨转阴</li>
+		   	<li>西风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150221.html">2015-02-21</a></li>
+		   			   	<li>11</li>
+		   	<li>3</li>
+		   	<li>阴转多云</li>
+		   	<li>西北风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150222.html">2015-02-22</a></li>
+		   			   	<li>10</li>
+		   	<li>4</li>
+		   	<li>小雨转阴</li>
+		   	<li>东风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150223.html">2015-02-23</a></li>
+		   			   	<li>12</li>
+		   	<li>4</li>
+		   	<li>阴</li>
+		   	<li>东风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150224.html">2015-02-24</a></li>
+		   			   	<li>10</li>
+		   	<li>6</li>
+		   	<li>小到中雨转小雨</li>
+		   	<li>东南风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150225.html">2015-02-25</a></li>
+		   			   	<li>10</li>
+		   	<li>6</li>
+		   	<li>阴</li>
+		   	<li>暂无实况</li>
+		   	<li>小于3级转3-4级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150226.html">2015-02-26</a></li>
+		   			   	<li>6</li>
+		   	<li>3</li>
+		   	<li>阴转小到中雨</li>
+		   	<li>东风</li>
+		   	<li>小于3级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150227.html">2015-02-27</a></li>
+		   			   	<li>4</li>
+		   	<li>2</li>
+		   	<li>中雨</li>
+		   	<li>东北风</li>
+		   	<li>4-5级</li>
+    	   </ul>
+    	   		   <ul>
+		   			   	<li><a href="http://zhenjiang.tianqi.com/yangzhong/20150228.html">2015-02-28</a></li>
+		   			   	<li>9</li>
+		   	<li>1</li>
+		   	<li>阴转多云</li>
+		   	<li>西北风</li>
+		   	<li>3-4级</li>
+    	   </ul>
+    	   		</div>
+		<div style="clear:both"></div>	  
+	</div>
+	<div class="lishicity03"><script>lishicity_index_03();</script></div>
+	<div id="tianqi_stat" class="box-base m7">
+		<div class="box-hd"><h3 class="box-t-l">扬中2015年2月份天气统计</h3></div>
+		<div class="tqtongji">
+		<div id="container">
+            <div class="demo" id="highcharts"></div>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('#highcharts').highcharts({
+					
+                    chart: {
+                        type: 'column'
+                    },
+                    title: { //标题
+                        text: '扬中历史天气统计'
+                    },
+                    subtitle: { //副标题
+                        text: 'www.tianqi.com'
+                    },
+                    xAxis: { //X轴选项
+                        categories: [ //设置X轴分类名称
+						                            '多云',
+						                            '雨',
+						                            '晴',
+						                            '阴',
+						                            '雪',
+						                        ]
+                    },
+                    yAxis: { //Y轴选项
+                        min: 0, //Y轴最小值
+                        title: { //Y轴标题
+                            text: '天数(天)'
+                        }
+                    },
+                    tooltip: { //数据点提示框 当鼠标滑过某点时，以框的形式提示改点的数据，比如该点的值，数据单位等
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y:.1f} 天</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: { //数据点选项
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{ //数据列选项
+                            name: '扬中', //显示数据列的名称
+                            data: [12, 7, 5, 3, 1, ] //数组或JSON，如：data:[0, 5, 3, 5]，或data: [{name: 'Point 1',y: 0}, {name: 'Point 2',y: 5}]
+
+                        }],
+                    credits: {
+                        enabled: false//不显示highCharts版权信息
+                    },
+                    exporting: {
+                        enabled: false //用来设置是否显示‘打印’,'导出'等功能按钮，不设置时默认为显示
+                    },
+					legend: {
+						enabled: false
+					},
+					title :{
+						text:null
+					},
+					subtitle:{
+						text:null
+					},
+                });
+            });
+        </script>
+		</div>
+		<div style="clear:both"></div>	  
+	</div>
+	<div class="lishicity04"><script>lishicity_index_0();</script></div>
+	<div id="tool_site" class="box-base m7">
+		<div class="box-hd"><h3 class="box-t-l">扬中2015年2月份风向统计</h3></div>
+		<div class="tqtongji">
+		   <ul>
+		   		   	<li>东北风（3天）</li>
+    	   		   	<li>东南风（3天）</li>
+    	   		   	<li>北风（2天）</li>
+    	   		   	<li>北风~东风（2天）</li>
+    	   		   	<li>东风（2天）</li>
+    	   		   	<li>东风~东南风（2天）</li>
+    	   		   	<li>东北风~北风（1天）</li>
+    	   		   	<li>东北风~东风（1天）</li>
+    	   		   	<li>东北风~东南风（1天）</li>
+    	   		   	<li>东风~东北风（1天）</li>
+    	   		   	<li>东南风~东风（1天）</li>
+    	   		   	<li>南风~北风（1天）</li>
+    	   		   	<li>南风~西风（1天）</li>
+    	   		   	<li>西北风（1天）</li>
+    	   		   	<li>西北风~东北风（1天）</li>
+    	   		   	<li>西风（1天）</li>
+    	   		   	<li>西风~东北风（1天）</li>
+    	   		   	<li>西风~东风（1天）</li>
+    	   		   	<li>西南风~北风（1天）</li>
+    	   		   	<li>西南风~南风（1天）</li>
+    	   		   </ul>
+		</div>
+		<div style="clear:both"></div>	  
+	</div>
+	
+	<div id="tool_site" class="box-base m7">
+		<div class="box-hd"><h3 class="box-t-l">扬中2015年2月份风力统计</h3></div>
+		<div class="tqtongji">
+		   <ul>
+		   		   	<li>小于3级（14天）</li>
+    	   		   	<li>3-4级（8天）</li>
+    	   		   	<li>4-5级（3天）</li>
+    	   		   	<li>小于3级~3-4级（2天）</li>
+    	   		   	<li>3-4级~小于3级（1天）</li>
+    	   		   </ul>
+		</div>
+		<div style="clear:both"></div>	  
+	</div>
+	
+</div>
+
+  <div class="right">
+  <div class="index_hezuo box_ind">
+    	<div class="box_head">
+            <h3 style="font-size:14px;" class="box_tit fl">扬中生活网站推荐</h3>
+            <span class="fr"><a  rel="nofollow" style="font-size:12px; padding-right:10px;" target="_blank" href="http://www.tianqi.com/fankui.html">更多</a></span>
+        </div>
+		<div class="hezuowangzhan">
+		
+		<li><a title="镇江pm2.5" target="_blank" href="http://www.tianqi.com/air/zhenjiang.html">镇江pm2.5</a></li>
+			<li><a title="扬中违章查询" target="_blank" href="http://www.cwz123.com/yangzhong.html">扬中违章查询</a></li>
+	<li><a title="镇江区号查询" target="_blank" href="http://quhao.tianqi.com/zhenjiang/">扬中区号查询</a></li><li><a title="扬中邮编查询" target="_blank" href="http://youbian.tianqi.com/yangzhong/">扬中邮编查询</a></li><li><a title="镇江气温查询" target="_blank" href="http://www.tianqi.com/qiwen/city_zhenjiang/">镇江气温查询</a></li>
+	
+				<li><a title="扬中30天天气" target="_blank" href="http://zhenjiang.tianqi.com/yangzhong/30/">扬中30天天气</a></li>
+
+      </div>
+		<div style="clear:both"></div>
+    </div>
+  	<div class="lishicity06"><script>lishicity_index_06();</script></div>
+        <div id="othercity" class="box-base">
+      <div class="box-hd">
+        <h3 class="box-t-l">主要城市天气</h3>
+	<label style="float:right; line-height:26px; margin-right:6px"><a href="http://www.tianqi.com/chinacity.html" target="_blank">更多</a></label>
+      </div>
+      <div class="besidecity">
+        <ul id="rim_city">
+          <li><a href="http://beijing.tianqi.com/" target="_blank" title="北京天气">北京</a></li>
+          <li><a href="http://shanghai.tianqi.com/" target="_blank" title="上海天气">上海</a></li>
+          <li><a href="http://tianjin.tianqi.com/" target="_blank" title="天津天气">天津</a></li>
+          <li><a href="http://chongqing.tianqi.com/" target="_blank" title="重庆天气">重庆</a></li>
+          <li><a href="http://haerbin.tianqi.com/" target="_blank" title="哈尔滨天气">哈尔滨</a></li>
+          <li><a href="http://changchun.tianqi.com/" target="_blank" title="长春天气">长春</a></li>
+          <li><a href="http://shenyang.tianqi.com/" target="_blank" title="沈阳天气">沈阳</a></li>
+          <li><a href="http://xian.tianqi.com/" target="_blank" title="西安天气">西安</a></li>
+          <li><a href="http://jinan.tianqi.com/" target="_blank" title="济南天气">济南</a></li>
+          <li><a href="http://lanzhou.tianqi.com/" target="_blank" title="兰州天气">兰州</a></li>
+          <li><a href="http://zhengzhou.tianqi.com/" target="_blank" title="郑州天气">郑州</a></li>
+          <li><a href="http://nanjing.tianqi.com/" target="_blank" title="南京天气">南京</a></li>
+          <li><a href="http://wuhan.tianqi.com/" target="_blank" title="武汉天气">武汉</a></li>
+          <li><a href="http://hangzhou.tianqi.com/" target="_blank" title="杭州天气">杭州</a></li>
+          <li><a href="http://hefei.tianqi.com/" target="_blank" title="合肥天气">合肥</a></li>
+          <li><a href="http://fuzhou.tianqi.com/" target="_blank" title="福州天气">福州</a></li>
+          <li><a href="http://nanchang.tianqi.com/" target="_blank" title="南昌天气">南昌</a></li>
+          <li><a href="http://changsha.tianqi.com/" target="_blank" title="长沙天气">长沙</a></li>
+          <li><a href="http://chengdu.tianqi.com/" target="_blank" title="成都天气">成都</a></li>
+          <li><a href="http://guangzhou.tianqi.com/" target="_blank" title="广州天气">广州</a></li>
+          <li><a href="http://kunming.tianqi.com/" target="_blank" title="昆明天气">昆明</a></li>
+          <li><a href="http://nanning.tianqi.com/" target="_blank" title="南宁天气">南宁</a></li>
+          <li><a href="http://suzhou.tianqi.com/" target="_blank" title="苏州天气">苏州</a></li>
+          <li><a href="http://shenzhen.tianqi.com/" target="_blank" title="深圳天气">深圳</a></li>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
+    </div>    <div class="lishicity07"><script>lishicity_index_07();</script></div>
+        <div id="worldcity" class="box-base">
+      <div class="box-hd">
+        <h3 class="box-t-l">国际城市天气</h3>
+	<label style="float:right; line-height:26px; margin-right:6px"><a href="http://www.tianqi.com/worldcity.html">更多</a></label>
+      </div>
+      <div class="besidecity">
+        <ul id="world_city">
+          <li><a href="http://www.tianqi.com/401010100.html" target="_blank" title="华盛顿天气">华盛顿</a></li>
+          <li><a href="http://www.tianqi.com/103010100.html" target="_blank" title="东京天气">东京</a></li>
+          <li><a href="http://www.tianqi.com/204010100.html" target="_blank" title="罗马天气">罗马</a></li>
+          <li><a href="http://www.tianqi.com/401030101.html" target="_blank" title="亚特兰大天气">亚特兰大</a></li>
+          <li><a href="http://www.tianqi.com/202010100.html" target="_blank" title="巴黎天气">巴黎</a></li>
+          <li><a href="http://www.tianqi.com/201010100.html" target="_blank" title="伦敦天气">伦敦</a></li>
+          <li><a href="http://www.tianqi.com/104010100.html" target="_blank" title="新加坡天气">新加坡</a></li>
+          <li><a href="http://www.tianqi.com/206020100.html" target="_blank" title="巴塞罗那天气">巴塞罗那</a></li>
+          <li><a href="http://www.tianqi.com/401110101.html" target="_blank" title="纽约天气">纽约</a></li>
+          <li><a href="http://www.tianqi.com/208010100.html" target="_blank" title="莫斯科天气">莫斯科</a></li>
+          <li><a href="http://www.tianqi.com/218010100.html" target="_blank" title="雅典天气">雅典</a></li>
+          <li><a href="http://www.tianqi.com/302010100.html" target="_blank" title="开普敦天气">开普敦</a></li>
+          <li><a href="http://www.tianqi.com/102010100.html" target="_blank" title="首尔天气">首尔</a></li>
+          <li><a href="http://www.tianqi.com/207010100.html" target="_blank" title="哥本哈根天气">哥本哈根</a></li>
+          <li><a href="http://www.tianqi.com/210020100.html" target="_blank" title="日内瓦天气">日内瓦</a></li>
+          <li><a href="http://www.tianqi.com/601020101.html" target="_blank" title="悉尼天气">悉尼</a></li>
+          <li><a href="http://www.tianqi.com/203010100.html" target="_blank" title="柏林天气">柏林</a></li>
+          <li><a href="http://www.tianqi.com/404030100.html" target="_blank" title="温哥华天气">温哥华</a></li>
+          <li><a href="http://www.tianqi.com/401040101.html" target="_blank" title="洛杉矶天气">洛杉矶</a></li>
+          <li><a href="http://www.tianqi.com/301010100.html" target="_blank" title="开罗天气">开罗</a></li>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
+    </div>    <div class="lishicity08"><script>lishicity_index_08();</script></div>
+    <div class="box-base m7">
+      	<div class="box-hd">
+        	<h3 class="box-t-l">扬中天气新闻 </h3>
+        	<span style="float:right;font-size:12px; font-weight:normal; padding-right:6px; line-height:26px"><a href="http://www.tianqi.com/news/" target="_blank">更多&raquo;</a></span> 
+      	</div>
+				<div>
+		<div class="lifeTravel">
+			<ul class="news">
+								<li><a href="http://zhenjiang.tianqi.com/news/183789.html" target="_blank">镇江2017年4月20日天气：多云，气温：23℃~14℃</a></li>
+								<li><a href="http://zhenjiang.tianqi.com/news/183363.html" target="_blank">镇江2017年4月19日天气：阴，气温：27℃~17℃</a></li>
+								<li><a href="http://zhenjiang.tianqi.com/news/182932.html" target="_blank">镇江2017年4月18日天气：晴，气温：27℃~13℃</a></li>
+								<li><a href="http://zhenjiang.tianqi.com/news/182657.html" target="_blank">镇江2017年4月17日天气：多云，气温：27℃~18℃</a></li>
+								<li><a href="http://zhenjiang.tianqi.com/news/174334.html" target="_blank">镇江2017年1月24日天气：多云，气温：9℃~3℃</a></li>
+							</ul>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+
+
+    </div>
+    <div class="lishicity05"><script>lishicity_index_05();</script></div>
+  </div>
+</div>
+<div class="lishicity09"><script>lishicity_index_09();</script></div>
+<div class="lishicity010"><script>lishicity_index_010();</script></div>
+<div class="block12"></div>
+<div class="ggt01"><script>lishicity_index_011();</script></div>
+<DIV style="CLEAR: both"></DIV>
+<div style="margin-left:auto; margin-right:auto; width:960px;"><script>bottom_gg();</script></div>
+<DIV style="CLEAR: both"></DIV>
+<div id="footer">
+	<p style="padding-top:8px;border-bottom:6px;line-height:22px;">
+               天气网提供<a href="http://zhenjiang.tianqi.com/yangzhong/">扬中天气预报</a>查询，
+        包括<a href="http://zhenjiang.tianqi.com/yangzhong/7/">扬中天气预报一周</a>, 
+        <a href="http://zhenjiang.tianqi.com/yangzhong/10/">扬中天气预报10天</a>, 
+        <a href="http://zhenjiang.tianqi.com/yangzhong/15/">扬中天气预报15天</a>, 
+		以及<a href="http://lishi.tianqi.com/yangzhong/index.html">扬中历史天气</a>查询
+	        <br>
+        导航网址：<a href="http://www.tianqi.com/chinacity.html" target="_blank">全国天气</a>　<a href="http://www.tianqi.com/beijingjingdian/" target="_blank">旅游天气</a>　
+        <a href="http://www.tianqi.com/worldcity.html" target="_blank">国际天气</a>　<a href="http://lishi.tianqi.com" target="_blank">历史天气</a>　
+        <a href="http://www.tianqi.com/news/" target="_blank">天气新闻</a>　<a href="http://www.tianqi.com/changshi/" target="_blank">天气常识</a>  <a href="http://www.tianqi.com/air/" target="_blank">pm2.5查询</a> <a href="http://wannianli.tianqi.com" target="_blank">万年历查询</a>
+        温馨提示：数据来源中国气象局，仅供参考<br>
+	Copyright &copy; 2009-2016 
+	<a href="http://www.tianqi.com" target="_blank">www.tianqi.com 天气网</a>. All Rights Reserved. 琼ICP备13002747号-1  <a href="http://www.tianqi.com/fankui.html" target="_blank" rel="nofollow">联系我们</a></p>
+</div>
+
+<script language="javascript">
+function set(id)
+{
+	var cityPy=$("#zone option:selected").attr("py");
+	if (cityPy==""){
+		cityPy=$("#city option:selected").attr("py");
+		var ishot=$("#city option:selected").attr("ishot");
+	}else{
+		var ishot=$("#zone option:selected").attr("ishot");
+	}
+
+	if(id == '1')
+	{
+		$("#zone").selectbox();
+		return;
+	}
+	else if(id == '2')
+	{
+		return;
+	}else if(id == '3')
+	{
+		SetCookie('cityPy','');
+		return;
+	}else if(id == '4')
+	{
+		if(cityPy==""){
+		alert('请选择县后再设置');
+		}else{
+		SetCookie('cityPy',cityPy);
+		alert("设置成功！");
+		}
+		return;
+	}
+
+	if(cityPy!=''){
+		var gourl='http://lishi.tianqi.com/'+cityPy+'/index.html';
+		window.location.href=gourl;
+	}
+}
+function getcity(p)
+{
+	loadJS("http://www.tianqi.com/weather.php?a=getZoneInfo&type=1&pid="+p+"&callback=getcityFun");
+}
+function getzone(p)
+{	
+	if($id('province').value==''){
+		str = '';
+		str += "<option ishot='0' py='' value=''>请选择县</option>";
+		$("#zone").html(str);
+		$("#zone").selectbox();
+	}else{
+		loadJS("http://www.tianqi.com/weather.php?a=getZoneInfo&type=2&cid="+p.value+"&pid="+$id('province').value+"&callback=getzoneFun");
+	}
+}
+function getcityFun(json)
+{
+	var str='';
+	str += "<option ishot='0' py='' value=''>请选择市</option>";
+	for(var key in json[0].py)
+	{
+		//if(json[0].defval==key) str += "<option selected ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+		//else str += "<option ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+		str += "<option ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+	}
+	$("#city").html(str);
+	str = '';
+	str += "<option ishot='0' py='' value=''>请选择县</option>";
+	/*for(var key in json[1].py)
+	{
+		if(json[1].defval==key) str += "<option selected ishot='"+json[1].ishot[key]+"' py='"+json[1].py[key]+"' value='"+key+"'>"+json[1].value[key]+"</option>";
+		else str += "<option ishot='"+json[1].ishot[key]+"' py='"+json[1].py[key]+"' value='"+key+"'>"+json[1].value[key]+"</option>";
+	}*/
+	$("#zone").html(str);
+	$("#city").selectbox();
+	$("#zone").selectbox();
+}
+function getzoneFun(json)
+{
+	str = '';
+	str += "<option ishot='0' py='' value=''>请选择县</option>";
+	for(var key in json[0].py)
+	{
+		//if(json[0].defval==key) str += "<option selected ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+		//else str += "<option ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+		str += "<option ishot='"+json[0].ishot[key]+"' py='"+json[0].py[key]+"' value='"+key+"'>"+json[0].value[key]+"</option>";
+	}
+	$("#zone").html(str);
+	$("#zone").selectbox();
+	set('go');
+}
+function setgzcity(c){
+    var citygz = getCookie('citygz');
+    if (citygz != '') {
+        c = c + ',' + citygz;
+    }
+    SetCookie('citygz', c);
+}
+</script>
+<script>index_021();</script>
+<script language="javascript" src="http://www.tianqi.com/static/js/ac.js"></script>
+<script language="javascript" src="http://www.tianqi.com/static/js/rc.js"></script>
+<div style="display:none"><script language="javascript" src="http://www.tianqi.com/static/js/tongji.js"></script></div></body>
+</html>
